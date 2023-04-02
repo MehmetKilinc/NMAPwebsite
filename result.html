@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <title>Port Scanner Results</title>
+</head>
+<body>
+    <h1>Port Scanner Results for {{ ip }}</h1>
+    <p>Open ports:</p>
+    <ul>
+        {% for port in open_ports %}
+            <li>{{ port }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
